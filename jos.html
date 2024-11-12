@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Dashboard</title>
+  <style>
+    body {
+        background-color: #2ecc71;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    p {
+      color: #666;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+    label {
+      color: #999;
+      margin-right: 10px; /* Space between label and input */
+      width: 120px; /* Fixed width for labels */
+    }
+    input {
+      padding: 10px;
+      margin: 5px;
+      width: 300px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #555; /* Darker background on hover */
+    }
+    a {
+      color: #333;
+    }
+    textarea{
+        max-height: 100px;
+        min-width: 1000px;px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Analytics Dashboard</h1>
+  <p>User engagement data will appear here.</p>
+  <textarea name="textarea" placeholder="ENTER TEXT" id="area_txt"></textarea>
+  <h2>User Credentials</h2>
+  <form>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" placeholder="First Name" id="firstName" name="firstName" required>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text"  placeholder="Last Name" id="lastName" name="lastName" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+  <h2>Contact Information</h2>
+  <p>If you need more information visit:
+  <a href="mailto:info@example.com">Contact us at: 0788243569</a></p>
+</body>
+</html>

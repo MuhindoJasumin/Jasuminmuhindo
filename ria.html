@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #2ecc71;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+    
+    header {
+        background-color: #27ae60;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    h1 {
+        margin: 0;
+        color: #f1c40f;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        background-color: #ecf0f1;
+        padding: 0.5rem;
+    }
+    
+    nav a {
+        color: #2c3e50;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    main {
+        padding: 2rem;
+    }
+    
+    .project-management, .code-editor {
+        margin-bottom: 2rem;
+    }
+    a.active,
+        a:hover {
+            background: #1b9bff;
+            transition: 5s;
+        }
+    
+    button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 150px;
+        margin-top: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 0.5rem;
+    }
+    
+    .preview {
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        color: #000;
+    }
+    </style>
+    <script>
+        document.getElementById('create-project').addEventListener('click', () => {
+    alert('New Project Created!');
+});
+
+    </script>
+</head>
+<body>
+    <header>
+        <h1>WEB DEVELOPMENT DASHBOARD</h1>
+        <nav>
+            <a class="active"  href="#">DASHBOARD</a>
+            <a href="#">Projects</a>
+            <a href="#">Code Editor</a>
+            <a href="#">Analytics</a>
+            <a href="#">User Input</a>
+        </nav>
+    </header>
+    <main>
+        <section class="project-management">
+            <h2>Project Management</h2>
+            <button id="create-project">Create New Project</button>
+        </section>
+        <section class="code-editor">
+            <h2>Code Editor</h2>
+            <textarea placeholder="Write your code here..."></textarea>
+            <div class="preview">
+                <h3>Preview</h3>
+                <div id="output"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
